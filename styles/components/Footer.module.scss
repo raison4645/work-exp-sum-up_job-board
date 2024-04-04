@@ -1,0 +1,99 @@
+@import '/styles/variables/colors';
+@import '/styles/variables/responsive';
+
+.footer {
+  color: $white;
+  .upper_footer {
+    position: relative;
+    background-color: $darkBlue;
+    height: fit-content;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+    @include lg {
+      flex-direction: row;
+      padding: 2rem 0;
+    }
+
+    .icon_container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @include lg {
+        padding-left: 5rem;
+      }
+    }
+
+    .footer_list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      row-gap: 2rem;
+      padding: 1.5rem;
+      @include lg {
+        justify-content: start;
+        width: 70%;
+      }
+      .list_items {
+        width: 8.5rem;
+        @include lg {
+          width: 33%;
+          max-width: 20rem;
+        }
+        .field {
+          font-weight: bold;
+        }
+        p {
+          margin-bottom: 0px;
+        }
+        a {
+          display: block;
+          color: $white;
+          font-weight: 300;
+          font-size: 14px;
+          text-decoration: none;
+          width: fit-content;
+        }
+      }
+    }
+
+    .bg_logo {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 0;
+
+    }
+  }
+  .lower_footer {
+    background-color: $black;
+    display: flex;
+    flex-direction: column;
+    padding: 0.75rem 2rem;
+    font-size: 12px;
+    gap: 0.3rem;
+
+    @include lg {
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0.75rem 5rem;
+    }
+
+    span {
+      font-size: 14px;
+    }
+
+    .terms_privacy {
+      a {
+        color: $white;
+        text-decoration: none;
+        font-size: 14px;
+      }
+      span {
+        padding: 0 0.75rem;
+      }
+    }
+  }
+}

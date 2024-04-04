@@ -1,0 +1,42 @@
+@import '/styles/variables/colors';
+@import '/styles/variables/responsive';
+
+.login_container {
+  padding-right: 20px;
+
+  .user_general {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    .avatar_container {
+      cursor: pointer;
+    }
+
+    .username_logout {
+      display: flex;
+      flex-direction: column;
+      span {
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 3.6rem;
+      }
+    }
+  }
+
+  button {
+    border: none;
+    color: $fontBlue;
+    font-weight: bold;
+    background: none;
+  }
+
+  .logout {
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+}

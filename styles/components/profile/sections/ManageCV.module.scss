@@ -1,0 +1,72 @@
+@import "/styles/variables/colors";
+@import "/styles/variables/responsive";
+@import "/styles/variables/button";
+@import "/styles/variables/word-clamp";
+
+.manage_cv_form {
+  display: flex;
+  flex-direction: column;
+  color: $darkGrey2;
+  font-size: 14px;
+  width: 100%;
+
+  label {
+    font-weight: bold;
+    background-color: $lightGrey1;
+    display: block;
+  }
+
+  .select_cv_container {
+    padding: 2rem;
+    .select_cv {
+      @include blueButton;
+      background: $white;
+      border: solid 1px $fontBlue;
+      color: $fontBlue;
+      height: 2rem;
+    }
+    .select_caution {
+      font-size: 12px;
+      margin-left: 0.75rem;
+    }
+  }
+
+  ul {
+    list-style: none;
+    border: solid 1px $darkGrey1;
+    margin: 0;
+
+    li {
+      display: flex;
+      // justify-content: space-between;
+      align-items: center;
+      border-bottom: solid 1px;
+      .filename, .cvname {
+        @include word-clamp(1);
+        width: 10rem;
+        height: fit-content;
+      }
+    }
+    .cv_list_head {
+      background-color: $black;
+      padding: 1rem 2rem;
+      color: $white;
+      span {
+        width: 11.25rem;
+        justify-content: inherit;
+        font-weight: bold;
+      }
+    }
+
+    li:last-child {
+      border-bottom: none;
+      // padding-bottom: 0.5rem;
+    }
+  }
+
+  .submit_btn {
+    @include blueButton;
+    margin: 1rem auto;
+  }
+
+}

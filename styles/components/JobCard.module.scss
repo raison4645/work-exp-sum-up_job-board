@@ -1,0 +1,63 @@
+@import '/styles/variables/colors';
+@import '/styles/variables/responsive';
+@import '/styles/variables/word-clamp';
+
+@mixin tag_commonStyle {
+  border-radius: 3px;
+  padding: 2px 7px;
+  font-size: 14px;
+  color: $fontDark;
+}
+
+.jobCard_container {
+  height: 260px;
+  width: 315px;
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  box-shadow: 5px 5px 10px #0000001A;
+  background-color: $white;
+
+  @include lg {
+    height: 230px;
+    width: 406px;
+  }
+
+  .bookmark {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .job_title {
+    color: $fontBlue;
+    margin: 0;
+    @include word-clamp(1);
+  }
+
+  .company_name {
+    font-size: 16px;
+    margin: 0;
+    @include word-clamp(1);
+  }
+
+  .tag_container {
+    display: flex;
+    gap: 10px;
+    .workmode {
+      background-color: $lightOrange;
+      @include tag_commonStyle;
+    }
+    .skills {
+      background-color: $skyBlue;
+      @include tag_commonStyle;
+    }
+
+  }
+  .days {
+    color: #707070;
+    font-size: 14px;
+  }
+}

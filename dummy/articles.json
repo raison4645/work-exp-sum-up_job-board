@@ -1,0 +1,122 @@
+{
+    "data": [
+        {
+            "id": 5,
+            "title": "Voluptas vel distinctio et fugit perspiciatis blanditiis. Illo quo est dolorem ut. Eaque et officia corporis.",
+            "author": "Jaylin Ward Sr.",
+            "excerpt_text": "Consectetur impedit aut fuga. Repudiandae pariatur qui doloremque nisi animi consectetur. Qui omnis sunt placeat dolore.",
+            "content": "<html><head><title>Aut nam et nesciunt non accusantium assumenda est maiores.</title></head><body><form action=\"example.net\" method=\"POST\"><label for=\"username\">a</label><input type=\"text\" id=\"username\"><label for=\"password\">vel</label><input type=\"password\" id=\"password\"></form><span>Nemo quasi eum quia nulla.</span><table><thead><tr><th>In.</th><th>Sit.</th><th>Quidem sed.</th></tr></thead><tbody><tr><td>Consequatur nobis fugit voluptatem autem ullam ut aut assumenda animi.</td><td>Quo reprehenderit id.</td><td>Numquam animi.</td></tr></tbody></table><i>Modi mollitia illo veniam distinctio iure rem.</i>Cumque dicta fugit esse in praesentium.</body></html>\n",
+            "image": "https://via.placeholder.com/100x100.png/00cc44?text=eum",
+            "external_url": "http://www.harris.biz/mollitia-voluptatibus-a-voluptatem-ut-explicabo-dolorum",
+            "login_required": 1,
+            "updated_by": "nick",
+            "status": "A",
+            "publish_at": "2024-05-11 06:23:21",
+            "created_at": "2024-02-21 06:01:24",
+            "updated_at": "2024-02-21 06:01:24"
+        },
+        {
+            "id": 2,
+            "title": "Sint voluptatem qui aut quis repellendus sunt voluptatem possimus. Excepturi et et est eaque consequatur. Exercitationem culpa ducimus odit. Possimus sed id commodi nulla harum.",
+            "author": "Johann Gaylord",
+            "excerpt_text": "Alias fugiat et atque eos recusandae. Ipsam culpa voluptates beatae non suscipit voluptatum ut nisi. Perferendis distinctio voluptatem error reprehenderit totam et distinctio omnis.",
+            "content": "<html><head><title>Dolorem exercitationem harum.</title></head><body><form action=\"example.org\" method=\"POST\"><label for=\"username\">fugiat</label><input type=\"text\" id=\"username\"><label for=\"password\">eum</label><input type=\"password\" id=\"password\"></form><a href=\"example.org\">Culpa in quibusdam saepe debitis ad magnam aliquam ad.</a><table><thead><tr><th>Aperiam molestias aperiam labore.</th><th>Quas labore et omnis aliquid.</th><th>Veniam et.</th><th>Mollitia quidem.</th></tr></thead><tbody><tr><td>Quae delectus earum inventore magni ipsa possimus quia reprehenderit ut quis.</td><td>Dolor.</td><td>At minus animi maiores dolor sint debitis nihil.</td><td>Rem velit quae qui consequatur ad rerum voluptates ipsa corrupti.</td></tr><tr><td>Quis debitis voluptas vel quos aspernatur asperiores.</td><td>Ea est eligendi quod magnam dolorem iure esse.</td><td>Esse veritatis eum necessitatibus qui minima ab.</td><td>Pariatur eos necessitatibus est.</td></tr><tr><td>Magni dolorum voluptatem id ipsum est voluptas.</td><td>Commodi quia deserunt et reprehenderit quia numquam ea.</td><td>Nam numquam est et accusamus.</td><td>Ut ipsa commodi quas maxime magni ratione.</td></tr></tbody></table></body></html>\n",
+            "image": "https://via.placeholder.com/100x100.png/00cc55?text=quibusdam",
+            "external_url": "http://goyette.com/sapiente-itaque-sit-ut-eaque-itaque-et-voluptatum-ea",
+            "login_required": 0,
+            "updated_by": "nick",
+            "status": "A",
+            "publish_at": "2024-05-02 03:28:07",
+            "created_at": "2024-02-21 06:01:24",
+            "updated_at": "2024-02-21 06:01:24"
+        },
+        {
+            "id": 11,
+            "title": "Eum suscipit quidem fugiat qui velit et ut. Aperiam nisi repellat eligendi consequatur et. Consequatur dolorum explicabo harum. Ipsam id qui sunt.",
+            "author": "Sam Tremblay",
+            "excerpt_text": "Ducimus est iure id voluptas facere. Pariatur maxime quia repellendus. Fuga dolor expedita qui eaque.",
+            "content": "<html><head><title>Hic veniam vitae illo dignissimos.</title></head><body><form action=\"example.net\" method=\"POST\"><label for=\"username\">neque</label><input type=\"text\" id=\"username\"><label for=\"password\">officia</label><input type=\"password\" id=\"password\"></form><table><thead><tr><th>Provident.</th><th>Aut nihil.</th><th>Nihil quibusdam qui.</th><th>Soluta aliquam.</th></tr></thead><tbody><tr><td>Quisquam voluptate suscipit libero accusantium consectetur mollitia.</td><td>Corrupti odit debitis error qui.</td><td>Dolor velit beatae maxime cupiditate.</td><td>Doloremque distinctio aut ex ratione voluptas quidem recusandae expedita.</td></tr><tr><td>Voluptate ratione veritatis autem distinctio aut.</td><td>Aut adipisci hic facere qui aut.</td><td>Dolorem deserunt magnam praesentium accusamus dolor possimus.</td><td>Quia illo mollitia.</td></tr><tr><td>Ut repudiandae iste fugit.</td><td>Et optio nisi eligendi exercitationem numquam maxime assumenda.</td><td>Nemo temporibus qui.</td><td>In perferendis est et eos quia natus dolorem occaecati officiis.</td></tr></tbody></table><i>Dolorum minima libero dolorum non dolores doloribus.</i><p>Nobis nisi tempora est quasi enim eum.</p></body></html>\n",
+            "image": "https://via.placeholder.com/100x100.png/00dd99?text=aut",
+            "external_url": "http://lang.org/qui-dolores-nihil-qui-sed-et-eos",
+            "login_required": 1,
+            "updated_by": "nick",
+            "status": "A",
+            "publish_at": "2024-04-04 22:49:34",
+            "created_at": "2024-02-21 06:01:24",
+            "updated_at": "2024-02-21 06:01:24"
+        },
+        {
+            "id": 1,
+            "title": "Distinctio dolor sint facilis inventore fugiat dolore quod. Consequuntur natus qui consequatur impedit labore minima voluptatem.",
+            "author": "Jonas Hane",
+            "excerpt_text": "Aut itaque dignissimos error sint eum magni. Harum quis est et corrupti eum. Nihil voluptatem in error recusandae praesentium.",
+            "content": "<html><head><title>Quod eaque aliquid doloremque rem.</title></head><body><form action=\"example.com\" method=\"POST\"><label for=\"username\">iusto</label><input type=\"text\" id=\"username\"><label for=\"password\">id</label><input type=\"password\" id=\"password\"></form>Illo amet reprehenderit quia qui placeat non officia repudiandae.Delectus ut cupiditate qui sed dolorem.</body></html>\n",
+            "image": "https://via.placeholder.com/100x100.png/00ddbb?text=quis",
+            "external_url": "http://dooley.com/et-architecto-beatae-harum-vel-est-voluptatem",
+            "login_required": 1,
+            "updated_by": "nick",
+            "status": "A",
+            "publish_at": "2024-04-03 14:58:46",
+            "created_at": "2024-02-21 06:01:24",
+            "updated_at": "2024-02-21 06:01:24"
+        },
+        {
+            "id": 12,
+            "title": "Aut earum aliquid nihil omnis. Libero autem dolor iste suscipit officia et. Reprehenderit minima molestias facilis excepturi sed.",
+            "author": "Bonnie Glover",
+            "excerpt_text": "Non est possimus quo. Quaerat molestiae illum vitae consequatur. Enim a ut eius animi vel atque autem.",
+            "content": "<html><head><title>Tempore excepturi quos dolorum ut harum explicabo porro consequatur tempore magnam ducimus eum.</title></head><body><form action=\"example.org\" method=\"POST\"><label for=\"username\">quo</label><input type=\"text\" id=\"username\"><label for=\"password\">animi</label><input type=\"password\" id=\"password\"></form><table><thead><tr><th>Sunt quod sed illum.</th><th>Voluptatum qui asperiores.</th><th>Voluptate.</th><th>Perferendis et omnis facere iusto.</th></tr></thead><tbody><tr><td>Quibusdam eveniet est aspernatur sed.</td><td>Aut qui quibusdam.</td><td>Sapiente modi rem dolores dolores laborum.</td><td>Est aut quia similique aperiam nulla sed et voluptatem sed id molestiae.</td></tr><tr><td>Numquam aperiam voluptas doloremque aut esse.</td><td>Quia temporibus repellendus saepe debitis est fugit similique incidunt id omnis velit.</td><td>Officia nam magni explicabo ea aspernatur rerum qui.</td><td>In quibusdam in ipsa inventore.</td></tr><tr><td>Consequatur eum quia ipsam nihil.</td><td>Quis aut quis odio et soluta.</td><td>Sed in nostrum consequatur soluta sunt fugit.</td><td>Tempore molestiae dignissimos reiciendis quo.</td></tr><tr><td>Aliquid ad ut quibusdam voluptas.</td><td>Veritatis laudantium dolor in voluptatem et at ut omnis qui ipsum sint aut unde.</td><td>Repellendus totam velit amet corrupti provident facere.</td><td>Est rem laborum ea iste.</td></tr><tr><td>Qui blanditiis sed accusamus illum dolorem voluptate itaque.</td><td>Vel praesentium.</td><td>Hic corrupti.</td><td>Quasi nemo.</td></tr><tr><td>Veritatis sed non nihil.</td><td>Corrupti et.</td><td>Tempore aliquid quos rerum.</td><td>Maxime nihil perferendis voluptas.</td></tr><tr><td>Nobis id et distinctio beatae est nihil nesciunt voluptates.</td><td>Deserunt tempora ut officiis voluptatem autem.</td><td>Enim rerum omnis.</td><td>Sed eos dolor nisi inventore ut ullam dolorum quia.</td></tr></tbody></table><h3>Enim qui sint nihil cupiditate.</h3></body></html>\n",
+            "image": "https://via.placeholder.com/100x100.png/002233?text=consequatur",
+            "external_url": "http://haley.com/",
+            "login_required": 0,
+            "updated_by": "nick",
+            "status": "A",
+            "publish_at": "2024-03-31 02:09:58",
+            "created_at": "2024-02-21 06:01:25",
+            "updated_at": "2024-02-21 06:01:25"
+        },
+        {
+            "id": 4,
+            "title": "Ut ad molestiae magnam et tenetur. Culpa sint placeat assumenda odit. Ad dicta labore deleniti architecto.",
+            "author": "Preston Gulgowski",
+            "excerpt_text": "Eligendi accusantium inventore doloribus molestiae est velit id laborum. Itaque id sed omnis nisi numquam maxime. Aut officia fugit rerum.",
+            "content": "<html><head><title>Nam nihil assumenda fuga est voluptatibus dolores eos veritatis enim et.</title></head><body><form action=\"example.org\" method=\"POST\"><label for=\"username\">at</label><input type=\"text\" id=\"username\"><label for=\"password\">expedita</label><input type=\"password\" id=\"password\"></form><i>Ut maxime velit animi id ea blanditiis minima nobis.</i><h2>Tenetur.</h2><a href=\"example.org\">Sint recusandae qui sapiente sit.</a><ul><li>Impedit qui officia sit.</li><li>Dolorem asperiores illo sapiente.</li><li>Harum sapiente et.</li><li>Tenetur.</li><li>Corrupti vitae dolorem aut temporibus.</li><li>Magnam autem incidunt aut quia alias.</li></ul></body></html>\n",
+            "image": "https://via.placeholder.com/100x100.png/00dd22?text=animi",
+            "external_url": "http://www.hessel.org/aut-ipsam-hic-quo-ex",
+            "login_required": 0,
+            "updated_by": "nick",
+            "status": "A",
+            "publish_at": "2024-03-17 19:58:08",
+            "created_at": "2024-02-21 06:01:24",
+            "updated_at": "2024-02-21 06:01:24"
+        },
+        {
+            "id": 7,
+            "title": "Ullam totam qui libero est. Harum libero ipsam doloribus cupiditate.",
+            "author": "Prof. Brandi D'Amore PhD",
+            "excerpt_text": "Possimus nesciunt explicabo in non quas et provident. Quia nobis ullam exercitationem non non.",
+            "content": "<html><head><title>Occaecati sed.</title></head><body><form action=\"example.com\" method=\"POST\"><label for=\"username\">quisquam</label><input type=\"text\" id=\"username\"><label for=\"password\">quibusdam</label><input type=\"password\" id=\"password\"></form><a href=\"example.org\">Facere eos fuga optio quo voluptatem quis ducimus.</a></body></html>\n",
+            "image": "https://via.placeholder.com/100x100.png/0000ee?text=rerum",
+            "external_url": "http://www.walter.org/et-hic-occaecati-ea-omnis-sed.html",
+            "login_required": 0,
+            "updated_by": "nick",
+            "status": "A",
+            "publish_at": "2024-03-02 04:41:21",
+            "created_at": "2024-02-21 06:01:24",
+            "updated_at": "2024-02-21 06:01:24"
+        }
+    ],
+    "links": {
+        "first": "http://localhost:8000/api/article?page=1",
+        "last": null,
+        "prev": null,
+        "next": null
+    },
+    "meta": {
+        "current_page": 1,
+        "from": 1,
+        "path": "http://localhost:8000/api/article",
+        "per_page": 15,
+        "to": 7
+    }
+}

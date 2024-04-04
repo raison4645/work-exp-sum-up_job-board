@@ -1,0 +1,121 @@
+@import "/styles/variables/colors";
+@import "/styles/variables/button";
+
+.profile_section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+  border-right: solid 1px $lightGrey1;
+  border-bottom: solid 1px $lightGrey1;
+
+  .profile_form {
+    display: flex;
+    flex-direction: column;
+
+    input {
+      width: 100%;
+      height: 5rem;
+      padding-left: 1rem;
+      border: solid 1px $lightGrey1;
+    }
+
+    label {
+      background-color: $lightGrey1;
+      width: 100%;
+      padding: 0.5rem 1rem;
+      display: block;
+    }
+
+    .name_row {
+      display: flex;
+      box-sizing: border-box;
+      div {
+        width: 100%;
+      }
+    }
+
+    .contact_row {
+      display: flex;
+      div {
+        width: 100%;
+      }
+      .contact_no_field {
+        display: flex;
+        .region_code {
+          max-width: 5rem;
+        }
+      }
+    }
+
+    .available_row {
+      display: flex;
+      div {
+        width: 100%;
+      }
+      .expected_salary {
+        display: flex;
+        .salary_currency {
+          max-width: 5rem;
+        }
+      }
+    }
+
+    .skills_row {
+      display: flex;
+      div {
+        width: 100%;
+      }
+    }
+
+    .save_profile_btn {
+      @include blueButton;
+      margin: 1rem auto;
+    }
+  }
+
+  .atd_evt_head {
+    display: flex;
+    gap: 7rem;
+    font-weight: bold;
+    border-bottom: solid 3px $darkGrey2;
+  }
+
+  .saved_jobbar_container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .apply_btn {
+      @include blueButton;
+      background-color: $orange;
+    }
+  }
+
+  .withdraw_btn {
+    position: absolute;
+    z-index: 2;
+    right: 2rem;
+    top: -4rem;
+    @include blueButton;
+  }
+
+  .alert_btn_group {
+    position: absolute;
+    right: 1rem;
+    top: -2.5rem;
+  }
+
+  .save_settings {
+    @include blueButton;
+  }
+
+  .disabled_btn {
+    @extend .save_settings;
+    background-color: $darkGrey1;
+  }
+
+  .delete_account_btn {
+    @extend .save_settings;
+    background-color: red;
+  }
+}

@@ -1,0 +1,13 @@
+@import '/styles/variables/colors';
+@import '/styles/variables/responsive';
+
+.autocomp_container {
+  border: solid 1px $lightGrey2;
+  width: 100%;
+  .input_field {
+    height: 38px;
+    width: 100%;
+    padding: 0 10px;
+    border: none;
+  }
+}

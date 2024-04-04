@@ -1,0 +1,47 @@
+@import '/styles/variables/colors';
+@import '/styles/variables/responsive';
+@import '/styles/variables/word-clamp';
+
+.bar_container {
+  display: flex;
+  justify-content: space-between;
+  height: 14rem;
+  width: 100%;
+  padding: 1.25rem 3rem;
+  border: solid 1px $lightGrey1;
+
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h3 {
+      color: $fontBlue;
+      font-weight: normal;
+    }
+    p {
+      @include word-clamp(1);
+    }
+
+    .tag_container {
+      display: flex;
+      gap: 0.75rem;
+      font-size: 0.85rem;
+
+      span {
+        background-color: $skyBlue;
+        padding: 0 0.5rem;
+      }
+    }
+    .posted_date {
+      font-size: 0.75rem;
+      color: $darkGrey2;
+    }
+  }
+
+  .bookmark {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}

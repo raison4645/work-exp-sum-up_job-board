@@ -1,0 +1,25 @@
+@import '/styles/variables/colors';
+@import '/styles/variables/responsive';
+@import '/styles/variables/button';
+
+.preview_container {
+  p {
+    font-weight: normal;
+  }
+  .btn_box {
+    display: flex;
+    justify-content: space-between;
+    .back {
+      @include blueButton;
+      background-color: #fff;
+      border: solid 1px $fontBlue;
+      color: $fontBlue;
+      width: 15rem;
+    }
+
+    .submit {
+      @include blueButton;
+      width: 15rem;
+    }
+  }
+}

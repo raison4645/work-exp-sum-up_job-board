@@ -1,0 +1,13 @@
+@mixin xsContentFont {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: normal;
+}
+@mixin smContentFont {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+}
+
+/* for normal size content, please use <p></p> directly since it already included required
+styling in globals.css */

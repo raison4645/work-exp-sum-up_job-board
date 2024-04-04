@@ -1,0 +1,20 @@
+@import '/styles/variables/colors';
+
+.job_sort {
+  background-color: $white;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+
+  .sort_by {
+    padding-right: 5px;
+    font-weight: bold;
+  }
+
+  .sort_date {
+    color: $fontBlue;
+  }
+}

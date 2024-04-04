@@ -1,0 +1,50 @@
+@import '/styles/variables/colors';
+@import '/styles/variables/responsive';
+
+.card_container {
+  width: 300px;
+  height: 600px;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  box-shadow: 2px 2px 6px rgb(213, 213, 213);
+  background-color: $white;
+  margin: auto;
+  margin-bottom: 20px;
+
+  @include lg {
+    width: 406px;
+    height: 595px;
+  }
+
+  .image_container {
+    height: 15rem;
+  }
+
+  .card_title {
+    color: $fontBlue;
+    font-size: 20px;
+    padding: 0;
+    text-align: left;
+    // property for line break - start
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    // property for line break - end
+  }
+
+  a {
+    width: 6rem;
+    button {
+      color: $white;
+      background-color: $navyBlue;
+      height: 2rem;
+      width: 6rem;
+      border: none;
+      cursor: pointer;
+    }
+  }
+}

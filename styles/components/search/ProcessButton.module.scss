@@ -1,0 +1,31 @@
+@import '/styles/variables/responsive';
+@import '/styles/variables/colors';
+
+@mixin commonBtnStyle {
+  border: none;
+  width: 100%;
+  height: 40px;
+  padding: 0 10px;
+  background-color: $orange;
+  color: #fff;
+  font-weight: 300;
+}
+
+.search_button {
+  @include commonBtnStyle;
+  @include lg {
+    width: 100px;
+  }
+}
+
+.search_button::before {
+  content: url('../../../public/sample_img/search/search_white.png');
+
+  @include lg {
+    content: 'Search'
+  }
+}
+
+.apply_button {
+  @include commonBtnStyle;
+}

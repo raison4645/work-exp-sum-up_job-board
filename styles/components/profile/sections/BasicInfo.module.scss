@@ -1,0 +1,30 @@
+@import '/styles/variables/colors';
+
+.basic_info_container {
+
+  h5 {
+    font-weight: bold;
+    padding: 1rem 2rem 0;
+  }
+  h3 {
+    padding: 2rem;
+  }
+  span {
+    padding-left: 2rem;
+  }
+
+  .basic_info {
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px $lightGrey1;
+    align-items: center;
+  }
+
+  .skills_header {
+    border: solid 1px $lightGrey1;
+  }
+
+  .skills_languages {
+    background-color: $lightGrey2;
+  }
+}

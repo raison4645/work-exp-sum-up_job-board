@@ -1,0 +1,658 @@
+{
+    "data": [
+        {
+            "id": 20,
+            "company_id": 2,
+            "view": 10,
+            "all_applicant": 10,
+            "applicant_unreaded": 3,
+            "job_title": "Application Developer / Programmer (Over $40K, J2EE, SQL)",
+            "reference_number": "ref_169393776",
+            "job_description": "Dolorum sequi excepturi tempora voluptas. Veniam sunt quod voluptates aperiam. Animi qui officiis sint velit odio et molestias ut. Reprehenderit sit ducimus iste est ut. Odit vel nam omnis earum minus iusto quibusdam ut.",
+            "job_level": "Middle",
+            "education_level": "Doctorate or above",
+            "salary_visible": 1,
+            "salary_type": "1",
+            "salary_min": 17751,
+            "salary_max": 23216,
+            "salary_negotiable": 1,
+            "workexp_min": 1,
+            "workexp_max": 2,
+            "work_mode": "remote",
+            "activate_at": null,
+            "publish_at": "2024-02-19 10:36:15",
+            "expire_at": "2024-04-23 18:23:06",
+            "last_index_at": null,
+            "status": "active",
+            "updated_by": "nick",
+            "created_at": "2024-01-31 03:52:55",
+            "updated_at": "2024-01-31 03:52:55",
+            "company_info": {
+                "id": 2,
+                "company_name": "ABC company",
+                "logo": "file_name.jpg"
+            },
+            "skills": [
+                {
+                    "id": 2,
+                    "name": "css",
+                    "search_id": 1,
+                    "sort": 1,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 20,
+                        "attr_value": "2"
+                    }
+                }
+            ],
+            "employment_types": []
+        },
+        {
+            "id": 33,
+            "company_id": 9,
+            "view": 10,
+            "all_applicant": 10,
+            "applicant_unreaded": 3,
+            "job_title": "Accounting Officer",
+            "reference_number": "ref_169098117",
+            "job_description": "Quo recusandae id eius iste facilis eum. Illo eum molestiae et dolor eos repellat qui necessitatibus.",
+            "job_level": "Middle",
+            "education_level": "Master Degree",
+            "salary_visible": 1,
+            "salary_type": "1",
+            "salary_min": 16011,
+            "salary_max": 27362,
+            "salary_negotiable": 1,
+            "workexp_min": 0,
+            "workexp_max": 2,
+            "work_mode": "remote",
+            "activate_at": null,
+            "publish_at": "2024-02-16 07:07:52",
+            "expire_at": "2024-04-17 01:34:51",
+            "last_index_at": null,
+            "status": "draft",
+            "updated_by": "nick",
+            "created_at": "2024-01-31 03:52:55",
+            "updated_at": "2024-01-31 03:52:55",
+            "company_info": {
+                "id": 9,
+                "company_name": "ABC company",
+                "logo": "file_name.jpg"
+            },
+            "skills": [
+                {
+                    "id": 5,
+                    "name": "nodejs",
+                    "search_id": 4,
+                    "sort": 4,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 33,
+                        "attr_value": "5"
+                    }
+                },
+                {
+                    "id": 5,
+                    "name": "nodejs",
+                    "search_id": 4,
+                    "sort": 4,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 33,
+                        "attr_value": "5"
+                    }
+                }
+            ],
+            "employment_types": [
+                {
+                    "id": 4,
+                    "name": "Internship",
+                    "search_id": 3,
+                    "sort": 3,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 33,
+                        "attr_value": "4"
+                    }
+                },
+                {
+                    "id": 3,
+                    "name": "Freelance",
+                    "search_id": 2,
+                    "sort": 2,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 33,
+                        "attr_value": "3"
+                    }
+                },
+                {
+                    "id": 6,
+                    "name": "Permanent",
+                    "search_id": 5,
+                    "sort": 5,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 33,
+                        "attr_value": "6"
+                    }
+                },
+                {
+                    "id": 2,
+                    "name": "Part Time",
+                    "search_id": 1,
+                    "sort": 1,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 33,
+                        "attr_value": "2"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 9,
+            "company_id": 8,
+            "view": 10,
+            "all_applicant": 10,
+            "applicant_unreaded": 3,
+            "job_title": "Assistant Accountant / Accountant",
+            "reference_number": "ref_173953390",
+            "job_description": "Voluptatem vel debitis voluptatibus rerum. Possimus nulla sequi quasi voluptatibus qui beatae doloribus. At saepe voluptas quis provident quod fugiat vitae.",
+            "job_level": "Top",
+            "education_level": "F.5 - F.7 or DSE",
+            "salary_visible": 1,
+            "salary_type": "1",
+            "salary_min": 10000,
+            "salary_max": 24394,
+            "salary_negotiable": 1,
+            "workexp_min": 1,
+            "workexp_max": 2,
+            "work_mode": "work from home",
+            "activate_at": null,
+            "publish_at": "2024-02-14 00:59:58",
+            "expire_at": "2024-04-09 22:36:06",
+            "last_index_at": null,
+            "status": "active",
+            "updated_by": "nick",
+            "created_at": "2024-01-31 03:52:55",
+            "updated_at": "2024-01-31 03:52:55",
+            "company_info": {
+                "id": 8,
+                "company_name": "ABC company",
+                "logo": "file_name.jpg"
+            },
+            "skills": [
+                {
+                    "id": 3,
+                    "name": "javascript",
+                    "search_id": 2,
+                    "sort": 2,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 9,
+                        "attr_value": "3"
+                    }
+                },
+                {
+                    "id": 7,
+                    "name": "scss",
+                    "search_id": 6,
+                    "sort": 6,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 9,
+                        "attr_value": "7"
+                    }
+                }
+            ],
+            "employment_types": [
+                {
+                    "id": 3,
+                    "name": "Freelance",
+                    "search_id": 2,
+                    "sort": 2,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 9,
+                        "attr_value": "3"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 15,
+            "company_id": 9,
+            "view": 10,
+            "all_applicant": 10,
+            "applicant_unreaded": 3,
+            "job_title": "Finance Manager",
+            "reference_number": "ref_187823025",
+            "job_description": "Qui voluptas est amet atque. Assumenda suscipit pariatur tempore ducimus in dolor dicta id.",
+            "job_level": "Middle",
+            "education_level": "Associate Degree",
+            "salary_visible": 1,
+            "salary_type": "1",
+            "salary_min": 19342,
+            "salary_max": 24709,
+            "salary_negotiable": 1,
+            "workexp_min": 0,
+            "workexp_max": 2,
+            "work_mode": "on site",
+            "activate_at": null,
+            "publish_at": "2024-02-11 13:42:32",
+            "expire_at": "2024-04-25 17:40:20",
+            "last_index_at": null,
+            "status": "active",
+            "updated_by": "nick",
+            "created_at": "2024-01-31 03:52:55",
+            "updated_at": "2024-01-31 03:52:55",
+            "company_info": {
+                "id": 9,
+                "company_name": "ABC company",
+                "logo": "file_name.jpg"
+            },
+            "skills": [
+                {
+                    "id": 7,
+                    "name": "scss",
+                    "search_id": 6,
+                    "sort": 6,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 15,
+                        "attr_value": "7"
+                    }
+                },
+                {
+                    "id": 6,
+                    "name": "typescript",
+                    "search_id": 5,
+                    "sort": 5,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 15,
+                        "attr_value": "6"
+                    }
+                },
+                {
+                    "id": 4,
+                    "name": "php",
+                    "search_id": 3,
+                    "sort": 3,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 15,
+                        "attr_value": "4"
+                    }
+                },
+                {
+                    "id": 5,
+                    "name": "nodejs",
+                    "search_id": 4,
+                    "sort": 4,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 15,
+                        "attr_value": "5"
+                    }
+                }
+            ],
+            "employment_types": []
+        },
+        {
+            "id": 5,
+            "company_id": 8,
+            "view": 10,
+            "all_applicant": 10,
+            "applicant_unreaded": 3,
+            "job_title": "Administrator",
+            "reference_number": "ref_170354504",
+            "job_description": "Sunt voluptatum dolorum ut quis consectetur beatae. Temporibus est officia porro asperiores omnis.",
+            "job_level": "Senior",
+            "education_level": "Associate Degree",
+            "salary_visible": 1,
+            "salary_type": "1",
+            "salary_min": 19723,
+            "salary_max": 20463,
+            "salary_negotiable": 1,
+            "workexp_min": 1,
+            "workexp_max": 3,
+            "work_mode": "remote",
+            "activate_at": null,
+            "publish_at": "2024-02-05 04:14:51",
+            "expire_at": "2024-03-31 12:32:31",
+            "last_index_at": null,
+            "status": "active",
+            "updated_by": "nick",
+            "created_at": "2024-01-31 03:52:55",
+            "updated_at": "2024-01-31 03:52:55",
+            "company_info": {
+                "id": 8,
+                "company_name": "DEF company",
+                "logo": "file_name.jpg"
+            },
+            "skills": [
+                {
+                    "id": 4,
+                    "name": "php",
+                    "search_id": 3,
+                    "sort": 3,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 5,
+                        "attr_value": "4"
+                    }
+                },
+                {
+                    "id": 1,
+                    "name": "html",
+                    "search_id": 0,
+                    "sort": 0,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 5,
+                        "attr_value": "1"
+                    }
+                },
+                {
+                    "id": 1,
+                    "name": "html",
+                    "search_id": 0,
+                    "sort": 0,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 5,
+                        "attr_value": "1"
+                    }
+                }
+            ],
+            "employment_types": [
+                {
+                    "id": 2,
+                    "name": "Part Time",
+                    "search_id": 1,
+                    "sort": 1,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 5,
+                        "attr_value": "2"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 6,
+            "company_id": 2,
+            "view": 10,
+            "all_applicant": 10,
+            "applicant_unreaded": 3,
+            "job_title": "全職接待員 / Receptionist / 行政文員 / Admin Officer",
+            "reference_number": "ref_140904239",
+            "job_description": "Inventore et rem natus eos. Commodi quia iste possimus eveniet. Aliquid non voluptatem beatae distinctio incidunt veniam.",
+            "job_level": "Senior",
+            "education_level": "Bachelor Degree",
+            "salary_visible": 1,
+            "salary_type": "1",
+            "salary_min": 18441,
+            "salary_max": 28697,
+            "salary_negotiable": 1,
+            "workexp_min": 0,
+            "workexp_max": 2,
+            "work_mode": "remote",
+            "activate_at": null,
+            "publish_at": "2024-02-02 11:52:05",
+            "expire_at": "2024-04-10 13:38:29",
+            "last_index_at": null,
+            "status": "active",
+            "updated_by": "nick",
+            "created_at": "2024-01-31 03:52:55",
+            "updated_at": "2024-01-31 03:52:55",
+            "company_info": {
+                "id": 2,
+                "company_name": "DEF company",
+                "logo": "file_name.jpg"
+            },
+            "skills": [],
+            "employment_types": []
+        },
+        {
+            "id": 21,
+            "company_id": 8,
+            "view": 10,
+            "all_applicant": 10,
+            "applicant_unreaded": 3,
+            "job_title": "Assistant Visual Merchandising Manager",
+            "reference_number": "ref_144900608",
+            "job_description": "Nobis sint et impedit et aliquid esse. Aut asperiores expedita temporibus veritatis aut recusandae asperiores. Consectetur rerum qui sit voluptatibus incidunt temporibus laboriosam.",
+            "job_level": "Senior",
+            "education_level": "F.5 - F.7 or DSE",
+            "salary_visible": 1,
+            "salary_type": "1",
+            "salary_min": 11134,
+            "salary_max": 22808,
+            "salary_negotiable": 1,
+            "workexp_min": 1,
+            "workexp_max": 3,
+            "work_mode": "hybrid",
+            "activate_at": null,
+            "publish_at": "2024-01-31 05:44:44",
+            "expire_at": "2024-04-03 07:56:04",
+            "last_index_at": null,
+            "status": "active",
+            "updated_by": "nick",
+            "created_at": "2024-01-31 03:52:55",
+            "updated_at": "2024-01-31 03:52:55",
+            "company_info": {
+                "id": 8,
+                "company_name": "DEF company",
+                "logo": "file_name.jpg"
+            },
+            "skills": [
+                {
+                    "id": 4,
+                    "name": "php",
+                    "search_id": 3,
+                    "sort": 3,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 21,
+                        "attr_value": "4"
+                    }
+                },
+                {
+                    "id": 4,
+                    "name": "php",
+                    "search_id": 3,
+                    "sort": 3,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 21,
+                        "attr_value": "4"
+                    }
+                }
+            ],
+            "employment_types": [
+                {
+                    "id": 3,
+                    "name": "Freelance",
+                    "search_id": 2,
+                    "sort": 2,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 21,
+                        "attr_value": "3"
+                    }
+                },
+                {
+                    "id": 6,
+                    "name": "Permanent",
+                    "search_id": 5,
+                    "sort": 5,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 21,
+                        "attr_value": "6"
+                    }
+                }
+            ]
+        },
+        {
+            "id": 24,
+            "company_id": 6,
+            "view": 10,
+            "all_applicant": 10,
+            "applicant_unreaded": 3,
+            "job_title": "Officer Manager",
+            "reference_number": "ref_147310979",
+            "job_description": "Incidunt rem ut quia. Sapiente aperiam sunt tempora adipisci error. Rem provident optio dolorem error error iusto ut et.",
+            "job_level": "Top",
+            "education_level": "Doctorate or above",
+            "salary_visible": 1,
+            "salary_type": "1",
+            "salary_min": 13899,
+            "salary_max": 20077,
+            "salary_negotiable": 1,
+            "workexp_min": 1,
+            "workexp_max": 2,
+            "work_mode": "work from home",
+            "activate_at": null,
+            "publish_at": "2024-01-30 12:07:59",
+            "expire_at": "2024-04-22 03:11:00",
+            "last_index_at": null,
+            "status": "active",
+            "updated_by": "nick",
+            "created_at": "2024-01-31 03:52:55",
+            "updated_at": "2024-01-31 03:52:55",
+            "company_info": {
+                "id": 6,
+                "company_name": "DEF company",
+                "logo": "file_name.jpg"
+            },
+            "skills": [],
+            "employment_types": [
+                {
+                    "id": 4,
+                    "name": "Internship",
+                    "search_id": 3,
+                    "sort": 3,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 24,
+                        "attr_value": "4"
+                    }
+                },
+                {
+                    "id": 3,
+                    "name": "Freelance",
+                    "search_id": 2,
+                    "sort": 2,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 24,
+                        "attr_value": "3"
+                    }
+                },
+                {
+                    "id": 7,
+                    "name": "Temporary",
+                    "search_id": 6,
+                    "sort": 6,
+                    "status": "active",
+                    "updated_by": "nick",
+                    "created_at": "2024-01-31 03:52:55",
+                    "updated_at": "2024-01-31 03:52:55",
+                    "pivot": {
+                        "position_id": 24,
+                        "attr_value": "7"
+                    }
+                }
+            ]
+        }
+    ],
+    "links": {
+        "first": "http://localhost:8000/api/position?page=1",
+        "last": null,
+        "prev": null,
+        "next": "http://localhost:8000/api/position?page=2"
+    },
+    "meta": {
+        "current_page": 1,
+        "from": 1,
+        "path": "http://localhost:8000/api/position",
+        "per_page": 15,
+        "to": 15
+    }
+}

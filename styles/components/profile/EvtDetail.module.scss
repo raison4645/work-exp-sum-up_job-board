@@ -1,0 +1,19 @@
+@import '/styles/variables/colors';
+@import '/styles/variables/responsive';
+@import '/styles/variables/word-clamp';
+
+
+.evt_detail {
+  width: 100%;
+  border-bottom: solid 2px $darkGrey2;
+  display: flex;
+  height: 4rem;
+  gap: 7.5rem;
+  color: $darkGrey2;
+  .evt_name {
+    width: 50%;
+    font-size: 0.9rem;
+    word-wrap: break-word;
+    @include word-clamp(2);
+  }
+}

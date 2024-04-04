@@ -1,0 +1,11 @@
+@import '/styles/variables/button';
+@import '/styles/variables/colors';
+
+.filter_container {
+  width: 50%;
+  margin: 2rem auto;
+
+  .filter_btn {
+    @include blueButton;
+  }
+}

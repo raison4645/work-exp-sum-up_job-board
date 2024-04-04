@@ -1,0 +1,85 @@
+@import '/styles/variables/colors';
+@import '/styles/variables/responsive';
+
+.home {
+  .job_section {
+    margin-top: 8rem;
+    background-color: $lightGrey2;
+    height: 40rem;
+    @include lg {
+      height: 32rem;
+    }
+  }
+  .search_section {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+
+    @include lg {
+      flex-direction: row;
+      gap: 0;
+      width: 635px;
+      height: fit-content;
+    }
+  }
+  .feajob_title {
+    color: $white;
+    position: relative;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 0.75rem
+  }
+
+  .head_title {
+    color: $white;
+    text-align: center;
+    position: relative;
+    font-weight: 300;
+    margin-bottom: 2rem;
+    strong {
+      font-weight: bold;
+    }
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 24px;
+    padding: 20px;
+    font-weight: bold;
+  }
+
+  .jobcards_container {
+    margin: auto;
+    width: 90vw;
+    max-width: 1300px;
+  }
+  .articles_container {
+    overflow: hidden;
+    height: 800px;
+    margin: auto;
+    @include lg {
+      width: 85vw;
+    }
+    .explore_more {
+      text-align: center;
+      margin-top: 20px;
+      button {
+        border-radius: 15px;
+        width: 116px;
+        height: 34px;
+        color: $fontBlue;
+        border: solid 1px $fontBlue;
+        background: $white;
+      }
+    }
+  }
+  .article_section {
+    background-color: $white;
+  }
+  .event_section {
+    background-color: $lightGrey2;
+  }
+}

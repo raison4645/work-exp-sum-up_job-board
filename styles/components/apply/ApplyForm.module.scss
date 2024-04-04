@@ -1,0 +1,104 @@
+@import "/styles/variables/colors";
+@import "/styles/variables/responsive";
+@import "/styles/variables/button";
+
+@mixin inputField {
+    height: 2.5rem;
+    border-radius: 5px;
+    padding-left: 0.5rem;
+    width: 100%;
+    border: solid 1px $darkGrey1;
+    color: $darkGrey2;
+}
+
+.form_content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  label {
+    height: 1rem;
+  }
+  .upload_btn {
+    border: none;
+    background: none;
+    color: $fontBlue;
+  }
+  .cv_form {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    input {
+      @include inputField;
+    }
+  }
+  .name_field {
+    display: flex;
+    gap: 1rem;
+    input {
+      @include inputField;
+    }
+  }
+  .contact_field {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    input {
+      @include inputField;
+    }
+    .email_field {
+      width: 50%;
+    }
+    .contact_no_container {
+      width: 50%;
+      .contact_no_field {
+        display: flex;
+        flex-wrap: nowrap;
+        .region_code {
+          flex: 1;
+          border-right: none;
+          border-radius: 5px 0 0 5px;
+        }
+        .contact_no {
+          flex: 2;
+          border-radius: 0 5px 5px 0;
+        }
+      }
+    }
+  }
+
+  .expected_salary {
+    display: flex;
+    .salary_currency {
+      width: 6rem;
+      border-right: none;
+      border-radius: 5px 0 0 5px;
+    }
+    .salary_amount {
+      border-radius: 0 5px 5px 0;
+    }
+    input {
+      @include inputField;
+    }
+  }
+
+  input:disabled {
+    background-color: $lightGrey1;
+  }
+  input::placeholder {
+    opacity: 0.5;
+  }
+
+
+  .preview_btn {
+    @include blueButton;
+    margin: 1rem auto 0;
+  }
+  p {
+    margin: 0;
+    color: red;
+    font-weight: normal;
+    height: 1rem;
+  }
+}
+
+

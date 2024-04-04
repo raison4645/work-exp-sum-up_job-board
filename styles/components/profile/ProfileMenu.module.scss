@@ -1,0 +1,21 @@
+@import '/styles/variables/colors';
+@import '/styles/variables/responsive';
+
+.profile_menu {
+  border: solid 1px $lightGrey1;
+  width: 23rem;
+  font-size: 14px;
+  ul {
+    padding: 2rem;
+    a {
+      text-decoration: none;
+      color: $fontBlue;
+    }
+  }
+  li:nth-child(-n + 4),
+  li:nth-last-child(1),
+  li:nth-last-child(2) {
+    padding-left: 0;
+    font-weight: bold;
+  }
+}

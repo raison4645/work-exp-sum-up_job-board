@@ -1,0 +1,48 @@
+@import '/styles/variables/colors';
+@import '/styles/variables/responsive';
+@import '/styles/variables/word-clamp';
+@import '/styles/variables/font';
+
+.apply_status {
+  background-color: $fontBlue;
+  width: fit-content;
+  padding : 0.25rem 0.75rem;
+  color: $white;
+  border-radius: 20px;
+  @include xsContentFont;
+}
+
+.job_title {
+  color: $fontBlue;
+}
+.company_name, .job_tag, .updated_at, .workmode_tag, .toggle_label {
+  @include xsContentFont;
+}
+
+.job_tag, .workmode_tag {
+  padding: 0.1rem 0.5rem;
+  border-radius: 20px;
+}
+
+.workmode_tag {
+  background-color: $lightOrange;
+}
+
+.job_tag {
+  background-color: $skyBlue;
+}
+
+.toggle_label {
+  color: $fontBlue;
+}
+
+.bar_details {
+  h5 {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  a {
+    color: $fontBlue;
+    text-decoration: underline;
+  }
+}
