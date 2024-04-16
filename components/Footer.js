@@ -1,5 +1,9 @@
 import styles from "@/styles/components/Footer.module.scss";
 import Image from "next/image";
+import FooterMedia  from '@/components/footer/FooterMedia'
+import Contact from '@/components/footer/Contact'
+import Platform from '@/components/footer/Platform'
+import UsefulLinks from '@/components/footer/UsefulLinks'
 
 const copyrightText = "2024 Hong Kong Science & Technology Parks Corporation, all rights reserved";
 const footerList = [
@@ -63,22 +67,10 @@ export default function Footer() {
   return (
     <footer className={styles.footer}>
       <section className={styles.upper_footer}>
-        <div className={styles.icon_container}>
-          <Image src="/sample_img/hkstp_logo.svg" width="200" height="100" alt="HKSTP logo" />
-        </div>
-        <div className={styles.footer_list}>
-          {footerList.map((item, index) => (
-            <div key={index} className={styles.list_items}>
-              <p className={styles.field}>{item.field}</p>
-              {item.subfields.map((subfield, slug) => (
-                <a key={slug} href={subfield.link}>{subfield.fieldName}</a>
-              ))}
-            </div>
-          ))}
-        </div>
-        <div className={styles.bg_logo}>
-          <Image src="/sample_img/footer_icon.svg" width="350" height="400" alt="HKSTP icon"/>
-        </div>
+        <FooterMedia />
+        <Platform />
+        <UsefulLinks />
+        <Contact />
       </section>
       <section className={styles.lower_footer}>
         <span>{copyrightText}</span>

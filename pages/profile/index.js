@@ -1,4 +1,4 @@
-import { getSession, useSession } from "next-auth/react"
+import { useSession } from "next-auth/react"
 import ProfileMenu from "@/components/profile/sections/ProfileMenu";
 import styles from "@/styles/pages/Profile.module.scss"
 import UserProfile from "@/components/profile/sections/UserProfile";
@@ -37,7 +37,7 @@ export default function Page() {
       name: 'Attended Events'
     },
     {
-      query: 'Your Jobs',
+      query: 'your_jobs',
       node: null,
       name: 'Your Jobs'
     },
@@ -77,11 +77,11 @@ export default function Page() {
       <ProfileMenu sectionQueries={sectionQueries} />
       <div className={styles.profile_sections_container}>
         {sectionQueries.map(item => item.query === query.section && <h2 className={styles.section_title}>{item.name}</h2>)}
-        {
-          query.section
-            ? sectionQueries.map((item) => query.section === item.query && item.node)
-            : sectionQueries[0].node
-        }
+          {
+            query.section
+              ? sectionQueries.map((item) => query.section === item.query && item.node)
+              : sectionQueries[0].node
+          }
       </div>
     </div>
   )

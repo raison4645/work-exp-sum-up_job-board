@@ -50,7 +50,7 @@ export default function AppliedJobBar({ job, setSelectedApply, selectedApply }) 
             />
             <label className={styles.apply_status}>Applied</label>
             <h4 className={styles.job_title}>{job?.job_title}</h4>
-            <p className={styles.company_name}>{job?.company_info?.company_name}</p>
+            <p className={styles.company_name}>{job?.company?.company_name}</p>
             <Box display='flex' gap={1}>
               <span className={styles.workmode_tag}>{job?.work_mode}</span>
               {job?.skills?.map((skill, idx) => <span className={styles.job_tag} key={`${skill.name}-${idx}`}>{skill?.name} </span>)}

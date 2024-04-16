@@ -14,6 +14,7 @@
     font-weight: bold;
     background-color: $lightGrey1;
     display: block;
+    padding: 1rem 2rem;
   }
 
   .select_cv_container {
@@ -23,7 +24,7 @@
       background: $white;
       border: solid 1px $fontBlue;
       color: $fontBlue;
-      height: 2rem;
+      width: fit-content;
     }
     .select_caution {
       font-size: 12px;
@@ -38,7 +39,6 @@
 
     li {
       display: flex;
-      // justify-content: space-between;
       align-items: center;
       border-bottom: solid 1px;
       .filename, .cvname {
@@ -60,13 +60,28 @@
 
     li:last-child {
       border-bottom: none;
-      // padding-bottom: 0.5rem;
     }
   }
 
-  .submit_btn {
-    @include blueButton;
-    margin: 1rem auto;
+  .btns_container {
+    display: flex;
+    padding: 2rem 3rem 5rem;
+    justify-content: center;
+    gap: 1rem;
+
+    .back_btn {
+      @include blueButton;
+      color: $fontBlue;
+      background-color: $white;
+      border: solid 1px $lightGrey2;
+    }
+
+    .submit_btn {
+      @include blueButton;
+      color: $white;
+      background-color: $fontBlue;
+    }
+
   }
 
 }

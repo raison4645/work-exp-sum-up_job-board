@@ -2,10 +2,11 @@ import { TextField } from '@mui/material'
 import DownloadIcon from '@mui/icons-material/Download';
 import DeleteIcon from '@mui/icons-material/Delete';
 import styles from '@/styles/components/profile/sections/ManageCV.module.scss'
+import Image from 'next/image'
 
-export default function ManageCV({ setToggleModal, demoCVList }) {
+export default function ManageCV({ demoCVList, setToggleManageCV }) {
   const handleSubmit = () => {
-    setToggleModal(false)
+    setToggleManageCV(false)
     // TODO: Post updated data to API
   }
 
@@ -33,7 +34,19 @@ export default function ManageCV({ setToggleModal, demoCVList }) {
           </li>
         )}
       </ul>
-      <button onClick={handleSubmit} className={styles.submit_btn}>Add</button>
+      <div className={styles.btns_container}>
+        <button onClick={() => setToggleManageCV(false)} className={styles.back_btn}>
+          <Image src='/sample_img/svgicon/btnIcon/ic-arrow-bk.svg' width={24} height={24} />
+          <h5>Back</h5>
+        </button>
+        <button
+          onClick={handleSubmit}
+          className={styles.submit_btn}
+        >
+          <h5>Add</h5>
+          <Image src='/sample_img/svgicon/btnIcon/ic-arrow-ok.svg' width={24} height={24} />
+        </button>
+      </div>
     </form>
   )
 }

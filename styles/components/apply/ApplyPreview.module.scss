@@ -3,23 +3,36 @@
 @import '/styles/variables/button';
 
 .preview_container {
-  p {
-    font-weight: normal;
+
+  .selected_cv {
+    padding: 1rem 2rem;
   }
+
+  :nth-child(6), :nth-child(7) {
+    background-color: $lightGrey1;
+  }
+  .filled_field {
+    padding: 1rem 2rem;
+  }
+
   .btn_box {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem 2rem 10rem;
+
+
     .back {
       @include blueButton;
       background-color: #fff;
-      border: solid 1px $fontBlue;
+      border: solid 1px $lightGrey2;
       color: $fontBlue;
-      width: 15rem;
     }
 
     .submit {
       @include blueButton;
-      width: 15rem;
+      background-color: $fontBlue;
+      color: $white;
     }
   }
 }

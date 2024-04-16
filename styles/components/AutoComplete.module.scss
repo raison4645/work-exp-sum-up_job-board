@@ -2,10 +2,16 @@
 @import '/styles/variables/responsive';
 
 .autocomp_container {
-  border: solid 1px $lightGrey2;
+  border-left: solid 1px $lightGrey2;
+  border-right: solid 1px $lightGrey2;
   width: 100%;
+  max-width: 90rem;
+  padding: 0 2rem;
+  background-color: $lightGrey2;
+
   .input_field {
-    height: 38px;
+    height: 3.75rem;
+    background-color: transparent;
     width: 100%;
     padding: 0 10px;
     border: none;

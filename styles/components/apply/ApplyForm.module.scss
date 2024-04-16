@@ -1,10 +1,10 @@
 @import "/styles/variables/colors";
 @import "/styles/variables/responsive";
 @import "/styles/variables/button";
+@import "/styles/variables/font";
 
 @mixin inputField {
-    height: 2.5rem;
-    border-radius: 5px;
+    height: 5rem;
     padding-left: 0.5rem;
     width: 100%;
     border: solid 1px $darkGrey1;
@@ -14,26 +14,32 @@
 .form_content {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
   label {
-    height: 1rem;
+    display: block;
+    padding: 0.5rem 2rem;
+    background-color: $lightGrey2;
+    @include xsContentFont;
+    font-weight: bold;
   }
+
   .upload_btn {
     border: none;
     background: none;
-    color: $fontBlue;
+    width: fit-content;
+    @include xsContentFont;
+    align-self: flex-end;
+    padding: 1rem;
+    font-weight: bold;
   }
   .cv_form {
     display: flex;
     align-items: center;
-    gap: 2rem;
     input {
       @include inputField;
     }
   }
   .name_field {
     display: flex;
-    gap: 1rem;
     input {
       @include inputField;
     }
@@ -41,7 +47,6 @@
   .contact_field {
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
     input {
       @include inputField;
     }
@@ -56,11 +61,9 @@
         .region_code {
           flex: 1;
           border-right: none;
-          border-radius: 5px 0 0 5px;
         }
         .contact_no {
-          flex: 2;
-          border-radius: 0 5px 5px 0;
+          flex: 5;
         }
       }
     }
@@ -71,11 +74,8 @@
     .salary_currency {
       width: 6rem;
       border-right: none;
-      border-radius: 5px 0 0 5px;
     }
-    .salary_amount {
-      border-radius: 0 5px 5px 0;
-    }
+
     input {
       @include inputField;
     }
@@ -91,7 +91,10 @@
 
   .preview_btn {
     @include blueButton;
-    margin: 1rem auto 0;
+    color: $white;
+    background-color: $fontBlue;
+    margin: 2rem auto 10.5rem;
+
   }
   p {
     margin: 0;
@@ -100,5 +103,3 @@
     height: 1rem;
   }
 }
-
-

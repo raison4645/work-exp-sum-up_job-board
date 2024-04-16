@@ -1,47 +1,58 @@
 @import '/styles/variables/colors';
 @import '/styles/variables/responsive';
+@import '/styles/variables/font';
 
 .home {
-  .job_section {
-    margin-top: 8rem;
-    background-color: $lightGrey2;
-    height: 40rem;
-    @include lg {
-      height: 32rem;
-    }
+  width: 100vw;
+  max-width: 86rem;
+  margin: auto;
+  border-left: solid 1px $lightGrey2;
+  border-right: solid 1px $lightGrey2;
+  border-bottom: solid 1px $lightGrey2;
+  position: relative;
+
+  h2 {
+    padding: 2rem;
   }
-  .search_section {
-    width: 90vw;
+
+  .banner_img {
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    max-width: 86rem;
+  }
+
+  .job_section {
+    background-color: $lightGrey2;
+    height: 38rem;
+  }
+
+  .home_search {
+    width: 50%;
     margin: auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: space-between;
+    justify-content:space-between;
+    opacity: 0.9;
 
     @include lg {
       flex-direction: row;
+      align-items: center;
+      width: 100%;
+      height: 9rem;
       gap: 0;
-      width: 635px;
-      height: fit-content;
+      background-color: $white;
+      justify-content: center;
     }
-  }
-  .feajob_title {
-    color: $white;
-    position: relative;
-    font-size: 24px;
-    font-weight: bold;
-    margin-top: 0.75rem
   }
 
   .head_title {
     color: $white;
-    text-align: center;
+    text-align: left;
     position: relative;
-    font-weight: 300;
     margin-bottom: 2rem;
-    strong {
-      font-weight: bold;
-    }
+    padding: 4rem 6.25rem;
   }
 
   h3 {
@@ -51,35 +62,57 @@
     font-weight: bold;
   }
 
-  .jobcards_container {
-    margin: auto;
-    width: 90vw;
-    max-width: 1300px;
-  }
-  .articles_container {
-    overflow: hidden;
-    height: 800px;
-    margin: auto;
-    @include lg {
-      width: 85vw;
-    }
-    .explore_more {
-      text-align: center;
-      margin-top: 20px;
-      button {
-        border-radius: 15px;
-        width: 116px;
-        height: 34px;
-        color: $fontBlue;
-        border: solid 1px $fontBlue;
-        background: $white;
+  .feajob_section {
+    border-bottom: solid 1px $lightGrey2;
+
+    .feajob_card_container {
+      display: flex;
+      :nth-child(-n + 3) {
+        border-left: none;
+      }
+      :nth-child(3) {
+        border-right: none;
       }
     }
+
+    .pagination_container {
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+    }
   }
-  .article_section {
-    background-color: $white;
-  }
-  .event_section {
-    background-color: $lightGrey2;
+
+  .articles_container {
+    margin: auto;
+
+    .main_articles {
+      height: 34.5rem;
+      width: 100%;
+      display: flex;
+
+      .main_img {
+        width: 50%;
+        background-color: $lightGrey2;
+        height: 100%;
+      }
+
+      .main_desc {
+        width: 50%;
+        span {
+          padding: 0 2rem;
+          @include xsContentFont;
+        }
+      }
+    }
+
+    .article_cards_container {
+      display: flex;
+    }
+
+    .more_articles {
+      color: black;
+      padding: 2rem 0;
+      text-align: center;
+    }
   }
 }

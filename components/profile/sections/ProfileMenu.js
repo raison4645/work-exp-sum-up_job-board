@@ -7,6 +7,7 @@ import Link from 'next/link';
 export default function ProfileMenu({ sectionQueries }) {
   const { query } = useRouter();
   const [currPage, setCurrPage] = useState('')
+
   useEffect(() => {
     setCurrPage(query.section)
   }, [query]);
@@ -15,17 +16,19 @@ export default function ProfileMenu({ sectionQueries }) {
     <div className={styles.profile_menu}>
       <List>
         { sectionQueries.map((item, index) =>
-          <ListItem
-            key={`${index}-${item}`}
-            sx={() => item.query === currPage && {fontWeight: 'bold', color: 1}}
-          >
-            <Link
-              key={index}
-              href={`/profile?section=${item.query}`}
-            >
-              {item.name}
-            </Link>
-          </ListItem>
+          item.query === 'your_jobs'
+            ?
+            <ListItem key={`${index}-${item}`}>{item.name}</ListItem>
+            :
+            <ListItem key={`${index}-${item}`}>
+              <Link
+                key={index}
+                href={`/profile?section=${item.query}`}
+                style={item.query === currPage ? {color: 'black'} : {color: '#036EE1'}}
+              >
+                {item.name}
+              </Link>
+            </ListItem>
         )}
       </List>
     </div>

@@ -1,68 +1,84 @@
 import { useState } from 'react'
-import { Accordion, AccordionDetails, AccordionSummary, Box } from '@mui/material'
+import { Accordion, AccordionDetails, AccordionSummary, Box, Stack, Grid } from '@mui/material'
 import styles from '@/styles/components/profile/DetailedJobBar.module.scss'
-import Image from 'next/image'
+import timeFormater from '@/common/timeFormater';
 import { Bookmark } from '@mui/icons-material'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 
 const accordionStyle = {
   width: 1,
   p: 2,
-  position: 'relative'
-}
-
-const accordionSumStyle = {
-  p: 0,
+  borderRadius: '0',
 }
 
 const iconStyle = {
-  color: 'white',
-  background: "#0288d1",
+  color: '#1f1f1f',
   borderRadius: '50%',
-  fontSize: '1.25rem'
 }
 
-
-export default function InvitationJobBar() {
+export default function InvitationJobBar({ ivt }) {
   const [expand, setExpand] = useState(false)
 
   return (
-    <div className={styles.bar_container}>
-      <Accordion
-        sx={accordionStyle}
-        expanded={expand}
-        onClick={() => setExpand(!expand)}
-      >
-        <AccordionSummary sx={accordionSumStyle}>
-          <div className={styles.bar_summary}>
-            <Image src="/sample_img/job_card.png" width={160} height={60} />
-            <div className={styles.bar_title}>
-              <h5>System Developer</h5>
-              <p>Blockchain Solution Limited</p>
-              {!expand &&
-              <Box>
-                <button>ACCEPT</button>
-                <button>REJECT</button>
-              </Box>
-            }
-            </div>
-            <div className={styles.bookmark_expand}>
-              <Bookmark color="info" sx={{margin: 0}} />
+    <Accordion
+      sx={accordionStyle}
+      expanded={expand}
+      elevation={0}
+      square
+    >
+      <AccordionSummary sx={{position: 'relative'}}>
+        <Box display='flex' justifyContent='space-between' sx={{width: 1}}>
+          <Stack gap={2} sx={{position: 'relative'}}>
+            <h4 className={styles.job_title}>{ivt?.job_title}</h4>
+            <p className={styles.company_name}>{ivt?.company?.company_name}</p>
+            <Box display='flex' gap={1}>
+              <span className={styles.workmode_tag}>{ivt?.work_mode}</span>
+              {ivt?.skills?.map((skill, idx) => <span className={styles.job_tag} key={`${skill.name}-${idx}`}>{skill?.name} </span>)}
+            </Box>
+            <p className={styles.updated_at}>{timeFormater(ivt?.updated_At)}</p>
+          </Stack>
+          <Stack
+            justifyContent='space-between'
+            alignItems='flex-end'
+          >
+            <Bookmark color="info" sx={{margin: 0}} />
+            <Box
+              display='flex'
+              sx={{width: 'fit-content'}}
+              gap={1}
+              alignItems='center'
+              justifyContent='space-between'
+              onClick={() => setExpand(!expand)}
+            >
+              <p className={styles.toggle_label}>Details</p>
               <ExpandMoreIcon
                 sx={expand ? {transform: 'rotate(180deg)', ...iconStyle} : iconStyle}
               />
-            </div>
-          </div>
-        </AccordionSummary>
-        <AccordionDetails sx={{width: 1}}>
-          <div className={styles.bar_details}>
-            <h5>Details</h5>
-            <span>Date & Time: </span>
-            <br/>
-            <span>Interview Link: </span><a>meet.google.com</a>
-          </div>
-        </AccordionDetails>
-      </Accordion>
-    </div>
+            </Box>
+          </Stack>
+        </Box>
+      </AccordionSummary>
+
+      <AccordionDetails sx={{pt: 3, pb: 0}}>
+        <Grid container gap={2} sx={{width: 1}}>
+          <Grid lg={12}>
+            <p>Hi. We would like to invite you to join the interview, details below</p>
+          </Grid>
+          <Grid lg={4}>
+            <h5>Date and Time</h5>
+            <p></p>
+          </Grid>
+          <Grid lg={4}>
+            <h5>Interview Link</h5>
+            <p>http://localhost:3000</p>
+          </Grid>
+          <Grid lg={12}>
+            <button>ACCEPT</button>
+            <button>REJECT</button>
+          </Grid>
+        </Grid>
+      </AccordionDetails>
+    </Accordion>
   )
 }
+

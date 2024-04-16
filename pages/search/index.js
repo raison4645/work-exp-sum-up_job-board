@@ -12,6 +12,7 @@ import convertParams from "@/common/convertParams";
 import { useWidth } from "@/hooks/useWidth"
 import slugHandle from "@/common/slugHandle";
 import position from '@/dummy/position.json'
+import ProcessButton from "@/components/search/ProcessButton";
 
 export default function index() {
   const [filters, setFilters] = useState({
@@ -46,7 +47,7 @@ export default function index() {
   }
 
   useEffect(() => {
-    // last Todo: check the param key's validity before update the filter
+    // TODO: check the param key's validity before update the filter
     setFilters({...filters, ...convertParams.parseFromParams(router.query)})
     fetchPost();
   }, [router.query]);
@@ -60,7 +61,7 @@ export default function index() {
       <main className={styles.search_content}>
         <section className={styles.cards_section}>
           <JobSort />
-          <div className={styles.jobcard_container}>
+          <div className={styles.jobcards_container}>
             {jobPosts.data.map((post, idx) =>
             <div
               onClick={() => onClickPost(post)}
@@ -68,8 +69,8 @@ export default function index() {
             >
               <JobCard
                 jobTitle={post.job_title}
-                companyName={post.company_info.company_name}
-                skills={post.skills}
+                companyName={post?.company?.company_name}
+                skills={post.skill}
                 workmode={post.work_mode}
                 publishAt={post.publish_at}
               />
@@ -77,13 +78,16 @@ export default function index() {
             )}
           </div>
           <div className={styles.pagination_container}>
-            <Pagination count={lastPage} showFirstButton showLastButton />
+            <Pagination count={lastPage} showFirstButton showLpastButton />
           </div>
         </section>
         <section className={styles.details_section}>
           <JobDetails
             details={selectedPost}
           />
+        <div className={styles.apply_container}>
+          <ProcessButton jobId={selectedPost.id} slug={slugHandle(selectedPost.company.company_name)} />
+        </div>
         </section>
       </main>
     </div>

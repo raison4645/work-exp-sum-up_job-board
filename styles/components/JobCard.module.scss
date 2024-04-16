@@ -3,26 +3,28 @@
 @import '/styles/variables/word-clamp';
 
 @mixin tag_commonStyle {
-  border-radius: 3px;
+  border-radius: 10px;
   padding: 2px 7px;
+  width: fit-content;
   font-size: 14px;
   color: $fontDark;
 }
 
 .jobCard_container {
-  height: 260px;
-  width: 315px;
+  width: 28.75rem;
+  max-width: 28.75rem;
+  height: 21.25rem;
   position: relative;
   padding: 1rem;
   display: flex;
   flex-direction: column;
-  gap: 0.6rem;
-  box-shadow: 5px 5px 10px #0000001A;
+  gap: 1rem;
+  border: solid 1px $lightGrey2;
   background-color: $white;
 
   @include lg {
-    height: 230px;
-    width: 406px;
+    width: 28.75rem;
+    height: 21.25rem;
   }
 
   .bookmark {
@@ -40,10 +42,12 @@
   .company_name {
     font-size: 16px;
     margin: 0;
-    @include word-clamp(1);
+    height: 3rem;
+    @include word-clamp(2);
   }
 
   .tag_container {
+    margin: 2rem 0;
     display: flex;
     gap: 10px;
     .workmode {

@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import styles from "@/styles/components/Header.module.scss";
 import AutoComplete from "../AutoComplete";
 import ProcessButton from "../search/ProcessButton";
-import TuneIcon from "@mui/icons-material/Tune";
 import Image from "next/image";
 import icon from '@/public/sample_img/hkstp.png'
 import SearchFilter from "../search/SearchFilter";
@@ -15,7 +14,7 @@ export default function Header() {
   const router = useRouter();
   const currentRoute = router.route
   const [showSearch, setShowSearch] = useState(false);
-  const [showFilter, setShowFilter] = useState(false);
+  const [toggleFilter, setToggleFilter] = useState(false);
   const [keyword, setKeyword] = useState(router.query.keyword ? router.query.keyword : '')
   const onInputChange = (e) => {
     const word = e.target.value
@@ -28,35 +27,52 @@ export default function Header() {
 
   return (
   <>
-    <div className={showSearch ? styles.search_header : styles.header}>
+    <div className={styles.header}>
       <BurgerMenu />
       <a href='/' className={styles.header_icon}>
         <Image src={icon} height={60}  alt="web icon of HKSTP talent Pool" priority />
       </a>
-      {showSearch && (
-        <div className={styles.header_searchbar}>
-          <AutoComplete
-            data={[]}
-            keyword={keyword}
-            onInputChange={onInputChange}
-          />
-          <ProcessButton
-            keyword={keyword}
-          />
-          <div
-            className={showFilter ? styles.filter_on : styles.filter_off}
-            onClick={() => setShowFilter(!showFilter)}
-          >
-            <TuneIcon htmlColor={ showFilter ? '#fff' : '#046EE1' } fontSize="large"/>
-          </div>
-        </div>
-      )}
+      {/* {showSearch && (
+      )} */}
       <div style={{display: 'flex', alignItems: 'center'}}>
         <NavList />
         <LangSwitcher />
       </div>
     </div>
-    {showFilter && (<SearchFilter />)}
+    {showSearch && (
+      <div className={styles.header_searchbar}>
+        <AutoComplete
+          data={[]}
+          keyword={keyword}
+          onInputChange={onInputChange}
+        />
+        <ProcessButton
+          keyword={keyword}
+        />
+        <div
+          className={styles.filterIcon}
+          onClick={() => setToggleFilter(!toggleFilter)}
+          style={toggleFilter ? {background: '#474747', border: '#474747'} : {background: 'none'}}
+        >
+          {
+            toggleFilter
+            ?
+              <Image
+                src='/sample_img/svgicon/filterIcon/ic-fitler-on.svg'
+                width={23}
+                height={20}
+              />
+            :
+              <Image
+                src='/sample_img/svgicon/filterIcon/ic-filter-off.svg'
+                width={23}
+                height={20}
+              />
+          }
+        </div>
+      </div>
+    )}
+    {toggleFilter && (<SearchFilter />)}
   </>
   );
 }

@@ -30,7 +30,7 @@ export default function BasicInfo({ profile, user, setIsEditing }) {
       <h3 className={styles.skills_header}>Skills, Languages and Interests</h3>
       <div className={styles.skills_languages}>
         <h5>Skills</h5>
-        <span>{profile.skill?.join(', ')}</span>
+        <span>{profile.skill?.map(item => item.name).join(', ')}</span>
         <h5>Languages</h5>
         <span>{profile.language?.join(', ')}</span>
         <h5>Sector Interest</h5>

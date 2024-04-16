@@ -10,10 +10,10 @@ export default function SimpleJobBar({ job }) {
     <div className={styles.bar_container}>
       <div className={styles.details}>
         <h3>{job?.job_title}</h3>
-        <p>{job?.company_info?.company_name}</p>
+        <p>{job?.company?.company_name}</p>
         <div className={styles.tag_container}>
           <span>{job?.work_mode}</span>
-          {job?.skills?.map((skill, idx) => <span key={`${skill.name}-${idx}`}>{skill?.name}</span>)}
+          {job?.skill?.map((skill, idx) => <span key={`${skill.name}-${idx}`}>{skill?.name}</span>)}
         </div>
         <span className={styles.posted_date}>{timeFormater(job?.updated_at)}</span>
       </div>
