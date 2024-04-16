@@ -1,0 +1,25 @@
+@import '/styles/variables/colors';
+
+.events_page {
+  max-width: 86rem;
+  margin: auto;
+  border-left: solid 1px $lightGrey2;
+  border-right: solid 1px $lightGrey2;
+  margin-bottom: 10rem;
+
+  .events_banner {
+    display: flex;
+    padding: 7rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      width: 38rem;
+    }
+  }
+
+  .events_nav_list {
+    height: 4rem;
+    background-color: $black;
+  }
+
+}

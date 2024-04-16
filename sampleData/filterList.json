@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "key": "industry",
+    "filter": "Industry",
+    "choices": [
+      {"id": "43", "name": "IT"},
+      {"id": "87", "name": "Marketing"},
+      {"id": "12", "name": "HR"},
+      {"id": "56", "name": "Education"}
+    ]
+  },
+  {
+    "id": 2,
+    "key": "job_function",
+    "filter": "Job Function",
+    "choices": [
+      {"id": "34", "name": "Development"},
+      {"id": "78", "name": "Sales"},
+      {"id": "91", "name": "Finance"},
+      {"id": "23", "name": "Operations"}
+    ]
+  },
+  {
+    "id": 3,
+    "key": "job_level",
+    "filter": "Job Level",
+    "choices": [
+      {"id": "65", "name": "Entry Level"},
+      {"id": "10", "name": "Mid Level"},
+      {"id": "45", "name": "Senior Level"}
+    ]
+  },
+  {
+    "id": 4,
+    "key": "employment_type",
+    "filter": "Employment Type",
+    "choices": [
+      {"id": "32", "name": "Full-time"},
+      {"id": "76", "name": "Part-time"},
+      {"id": "89", "name": "Contract"},
+      {"id": "54", "name": "Freelance"}
+    ]
+  },
+  {
+    "id": 5,
+    "key": "education_level",
+    "filter": "Education Level",
+    "choices": [
+      {"id": "21", "name": "High School"},
+      {"id": "67", "name": "Bachelor's Degree"},
+      {"id": "98", "name": "Master's Degree"},
+      {"id": "79", "name": "PhD"}
+    ]
+  },
+  {
+    "id": 6,
+    "key": "work_experience",
+    "filter": "Work Experience",
+    "choices": [
+      {"id": "90", "name": "No Experience"},
+      {"id": "38", "name": "1-3 Years"},
+      {"id": "54", "name": "3-5 Years"},
+      {"id": "21", "name": "5+ Years"}
+    ]
+  }
+]

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="5.564" height="12.057" viewBox="0 0 5.564 12.057">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_2838" data-name="Rectangle 2838" width="5.565" height="12.057" transform="translate(0.218 0.435)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="ico-share-fb" transform="translate(-0.217 -0.435)" clip-path="url(#clip-path)">
+    <path id="Path_1263" data-name="Path 1263" d="M1.481,12.492H3.908V6.412H5.6l.181-2.036H3.907V3.216c0-.48.1-.67.561-.67H5.784V.434H4.1c-1.809,0-2.621.8-2.621,2.318V4.375H.218V6.436H1.481Z" fill="#fff"/>
+  </g>
+</svg>

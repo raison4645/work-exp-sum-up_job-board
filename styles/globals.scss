@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  z-index: 1;
+  box-sizing: border-box;
+  font-weight: inherit;
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+h1 {
+  font-size: 60px;
+  line-height: 64px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 44px;
+  line-height: 48px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
+h4 {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: normal;
+}
+
+h5 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.css-i4bv87-MuiSvgIcon-root {
+  /* To fix Mui Checkbox cannot toggle onClick when click its middle part */
+  z-index: -1;
+}
+
+.css-ym4lpt-MuiAutocomplete-root .MuiInput-root .MuiInput-input {
+  height: 70px;
+  font-size: 24px;
+}
+
+*:focus {
+  outline: none;
+}
+
+// ***** selected menuItem style *****
+.css-6hp17o-MuiList-root-MuiMenu-list {
+  padding: 0;
+}
+
+.css-1mq3qqq-MuiButtonBase-root-MuiMenuItem-root.Mui-selected {
+  background-color: #474747;
+}
+
+.css-1mq3qqq-MuiButtonBase-root-MuiMenuItem-root.Mui-selected:hover {
+  background-color: #606060;
+}
+
+.css-1mq3qqq-MuiButtonBase-root-MuiMenuItem-root.Mui-selected:hover
+
+.css-1mq3qqq-MuiButtonBase-root-MuiMenuItem-root {
+  -webkit-tap-highlight-color: #474747;
+}
+
+// ***** selected menuItem style end *****
+
+// ***** autoComplete *****
+.MuiAutocomplete-listbox {
+  background: #363636 !important;
+  padding: 0;
+  color: #FFF;
+}
+// ***** autoComplete end *****
